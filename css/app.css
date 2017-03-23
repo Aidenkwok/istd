@@ -1,0 +1,150 @@
+/*PARAGRAPH 1*/
+
+
+.divider{
+	border-top: 1px solid black;
+	height: 1px;
+}
+
+.site-title{
+	margin:0;
+	text-transform: uppercase;
+	color:white;
+}
+
+.topbar{
+	padding:0.5em;
+	background-color: black
+}
+
+.pg1, .pg2, .pg3, .pg4{
+	margin-top:2em;
+	margin-bottom:2em;
+}
+
+.pg1-intro{
+	text-transform: uppercase;
+	font-size: 5em;
+
+}
+
+#hesaid{
+	font-weight:normal;
+	font-size: 0.3em;
+}
+
+
+/*PARAGRAPH 2*/
+
+.container{
+	position: relative;
+	height: 145em;
+}
+
+.background{
+	background-color: black;
+	height:100%;
+	width: 50%;
+	z-index:1;
+}
+
+.text{
+	position: absolute;
+	z-index:10;
+	top:0;
+	width:100%;
+	color:grey;
+	font-size: 1em;
+}
+
+.left{
+	text-align: right;
+	color:white;
+}
+
+.right{
+	text-align: left;
+	color:black;
+	background-color: black;
+	display: inline;
+}
+
+.middle{
+	color:white;
+	text-align: center;
+	margin: 6em 0;
+	font-style: italic;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+.grey{
+	background-color: grey;
+	font-weight:normal;
+}
+
+.five{
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+.five-step{
+	font-size: 1.6em;
+}
+
+
+/*PARAGRAPH 3*/
+
+.pg3{
+	height:95vh;
+}
+
+.center{
+	display: flex;
+	align-items:center;
+}
+
+
+/*PARAGRAPH 4*/
+
+.align{
+	justify-content:center;
+}
+
+#video{
+	margin: 14em 0 ;
+	width:80%;
+}
+
+#cam-feed{
+	width:80vw;
+	position: absolute;
+}
+
+.black{
+	background-color: black
+}
+
+#container2{
+	position: relative;
+	height:42.5em;
+	margin-bottom: 10em;
+}
+
+#final{
+	width:80vw;
+	position:absolute;
+	color:black;
+	z-index: 11;
+	text-align: center;
+	height:100%;
+}
+
+#final p{
+	width:50%;
+}
+
+#footer{
+	text-align: center;
+	padding:3em;
+}
