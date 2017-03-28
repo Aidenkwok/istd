@@ -84,14 +84,6 @@
         $("video").get(0).play();
     });
 
-
-    navigator.getBattery().then(function(battery) {
-        $("#battery").append("<p>" +'You have ' + battery.dischargingTime + " seconds left" + "</p>");
-        battery.addEventListener('dischargingtimechange', function() {
-            $("#battery").replaceWith("<p>" +'You have ' + battery.dischargingTime + " seconds left" + "</p>");
-        });
-    });
-
     getLocation();
 }); 
 
@@ -100,8 +92,20 @@ $(".right").click(function(){
 });
 
 
-$(window).scroll(function() {
-    if ($('#cam-feed').is(':in-viewport')) {
-        alert("hello");
-    }
+navigator.getBattery().then(function(battery) {
+    $("#battery").append("<p>" +'You have ' + battery.dischargingTime + " seconds left" + "</p>");
+    battery.addEventListener('dischargingtimechange', function() {
+        $("#battery").replaceWith("<p>" +'You have ' + battery.dischargingTime + " seconds left" + "</p>");
+    });
 });
+
+
+////////////////TESTING////////////////
+
+// $(window).scroll(function() {
+//     if ($('#cam-feed').is(':in-viewport')) {
+//         alert("hello");
+//     }
+// });
+
+console.log("is this working?");

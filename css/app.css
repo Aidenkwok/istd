@@ -54,7 +54,7 @@
 	top:0;
 	width:100%;
 	color:grey;
-	font-size: 1em;
+	/*font-size: 1em;*/
 }
 
 .left{
@@ -148,3 +148,14 @@
 	text-align: center;
 	padding:3em;
 }
+
+.pg5 , .pg4{
+	height:100vh;
+	border-bottom:1px white solid;
+}
+
+.pg5{
+	height:100vh;
+	border:1px solid white;
+}
+
