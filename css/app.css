@@ -117,7 +117,6 @@
 }
 
 #cam-feed{
-	width:80vw;
 	position: absolute;
 }
 
@@ -132,7 +131,7 @@
 }
 
 #final{
-	width:80vw;
+	/*width:80vw;*/
 	position:absolute;
 	color:black;
 	z-index: 11;
