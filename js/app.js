@@ -79,11 +79,7 @@
                 console.log(error);
             })   
     })();
-
-    $("video").hover(function(){
-        $("video").get(0).play();
-    });
-
+    
     getLocation();
 }); 
 
@@ -99,13 +95,78 @@ navigator.getBattery().then(function(battery) {
     });
 });
 
-
-////////////////TESTING////////////////
-
-// $(window).scroll(function() {
-//     if ($('#cam-feed').is(':in-viewport')) {
-//         alert("hello");
-//     }
-// });
-
 console.log("is this working?");
+
+$.scrollify({
+        section : ".section",
+        sectionName : "section-name",
+        interstitialSection : "",
+        easing: "easeOutExpo",
+        scrollSpeed: 1100,
+        offset : 0,
+        scrollbars: true,
+        standardScrollElements: "",
+        setHeights: false,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll:true,
+        before:function() {},
+        after:function() {},
+        afterResize:function() {},
+        afterRender:function() {}
+});
+
+var waypoint = new Waypoint({
+  element: $('#waypoint1'),
+  handler: function() {
+    $('#typed').typeIt({
+        speed: 100,
+        breakLines: false,
+        autoStart: false
+    })
+    .tiType('Abruptly he was sitting up with O’Brien’s arm round his shoulders. ')
+    .tiPause(700)
+
+    .tiType("He had perhaps lost consciousness for a few seconds.")
+    .tiPause(2000)
+
+    .tiType("The bonds that had held his body down were loosened. ")
+    .tiPause(700)
+
+    .tiType("He felt very cold, ")
+    .tiPause(1000)
+
+    .tiType("He felt very cold, ")
+    .tiPause(1000)
+
+    .tiType("he was shaking uncontrollably, ")
+    .tiPause(1000)
+
+    .tiType("his teeth were chattering, ")
+    .tiPause(1000)
+
+    .tiType("the tears were rolling down his cheeks. ")
+    .tiPause(1000)
+
+    .tiType("For a moment he clung to O’Brien like a baby, curiously comforted by the heavy arm round his shoulders. ")
+    .tiPause(700)
+
+    .tiType("He had the feeling that O’Brien was his protector, ")
+    .tiPause(1000)
+
+    .tiType("that the pain was something that came from outside, ")
+    .tiPause(1000)
+
+    .tiType("from some other source, ")
+    .tiPause(1000)
+
+    .tiType("and that it was O’Brien who would save him from it.")
+  }
+})
+
+var waypoint = new Waypoint({
+  element: $('#waypoint2'),
+  handler: function() {
+    $("video").get(0).play();
+  }
+})

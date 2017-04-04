@@ -17,7 +17,12 @@
 	background-color: black
 }
 
-.pg1, .pg2, .pg3, .pg4{
+.pg1{
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.pg2, .pg3, .pg4{
 	margin-top:2em;
 	margin-bottom:2em;
 }
@@ -69,6 +74,10 @@
 	display: inline;
 }
 
+.right:hover{
+	cursor:pointer;
+}
+
 .middle{
 	color:white;
 	text-align: center;
@@ -96,7 +105,7 @@
 /*PARAGRAPH 3*/
 
 .pg3{
-	height:95vh;
+	height:100vh;
 }
 
 .center{
@@ -112,12 +121,14 @@
 }
 
 #video{
-	margin: 14em 0 ;
 	width:80%;
 }
 
 #cam-feed{
+	height:100%;
+	width: 100%;
 	position: absolute;
+	object-fit:cover;
 }
 
 .black{
@@ -126,8 +137,9 @@
 
 #container2{
 	position: relative;
-	height:42.5em;
-	margin-bottom: 10em;
+	height:70vh;
+	margin: 15vh 0;
+	/*margin-bottom: 10em;*/
 }
 
 #final{
@@ -141,6 +153,7 @@
 
 #final p{
 	width:50%;
+	line-height: 3em;
 }
 
 #footer{
@@ -148,13 +161,12 @@
 	padding:3em;
 }
 
-.pg5 , .pg4{
+.pg4{
 	height:100vh;
 	border-bottom:1px white solid;
 }
 
 .pg5{
-	height:100vh;
-	border:1px solid white;
+	/*border:1px solid white;*/
 }
 
