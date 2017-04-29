@@ -13,13 +13,13 @@
 //     function getLocation() {
 //         if (navigator.geolocation) {
 //             navigator.geolocation.getCurrentPosition(showPosition);
-//         } else { 
+//         } else {
 //             x.innerHTML = "Geolocation is not supported by this browser.";
 //         }
 //     }
 
 //     function showPosition(position) {
-//         x.innerHTML = "Latitude: " + position.coords.latitude + 
+//         x.innerHTML = "Latitude: " + position.coords.latitude +
 //         "<br>Longitude: " + position.coords.longitude;
 //     }
 
@@ -37,11 +37,11 @@
 //             var video = document.getElementById('cam-feed');
 //             video.src = window.URL.createObjectURL(mediaStream);
 //             video.play();
-//         },   
+//         },
 //         //handle error
 //         function (error) {
 //             console.log(error);
-//         })   
+//         })
 // });
 
 
@@ -51,7 +51,7 @@
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
-        } else { 
+        } else {
             x.innerHTML = "Geolocation is not supported by this browser.";
         }
     }
@@ -73,15 +73,15 @@
                 var video = document.getElementById('cam-feed');
                 video.src = window.URL.createObjectURL(mediaStream);
                 video.play();
-            },   
+            },
             //handle error
             function (error) {
                 console.log(error);
-            })   
+            })
     })();
-    
+
     getLocation();
-}); 
+});
 
 $(".right").click(function(){
  $(this).css("color","white");
@@ -94,8 +94,6 @@ navigator.getBattery().then(function(battery) {
         $("#battery").replaceWith("<p>" +'You have ' + battery.dischargingTime + " seconds left" + "</p>");
     });
 });
-
-console.log("is this working?");
 
 $.scrollify({
         section : ".section",
